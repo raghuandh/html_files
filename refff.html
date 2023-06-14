@@ -1,0 +1,76 @@
+<html>
+<title>Registration Page</title>
+<head>
+<style>
+body{
+background-color:white;
+color:black;
+}
+#inp{
+border-radius:10px;
+    border:solid 2px;    
+    margin: 20px 5px;
+    
+}
+#inp:focus{
+    outline:solid 2px red;
+}
+#button {
+  background-color: red;
+  border-radius:10px;
+  color: white;
+  padding: 8px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+#forh{
+color:red;
+}
+</style>
+</head>
+<body>
+
+<h1 id="forh" align="center"><font face="sans-serif" >STUDENT REGISTRATION FORM</font></h1>
+<form method="POST" action="form.php">
+<fieldset>
+<legend><font face="sans-serif" size=4 id="forh"> Registration</font></legend>
+<font face="sans-serif" size=3>FirstName</font>:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="text" name="fname" placeholder="First Name" required id="inp"><br><br>
+<font face="sans-serif" size=3>LastName:</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="text" name="lname" placeholder="Last Name" required id="inp"><br><br>
+<font face="sans-serif" size=3>Password:</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="text" name="password" placeholder="password" required id="inp"><br><br>
+<font face="sans-serif" size=3>EmailID:</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="email" name="email" required id="inp"><br><br>
+<font face="sans-serif" size=3>Mobile Number:</font>
+<input type="tel" name="mobile" pattern="[1-9]{1}[0-9]{9}" required id="inp"><br><br>
+<font face="sans-serif" size=3>Date Of Birth:</font>&nbsp&nbsp&nbsp&nbsp
+<input type="Date" name="dob" id="inp"><br><br>
+<font face="sans-serif" size=3>Gender:</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="radio" id="Male" name = "Gender" value="Male">
+<font face="sans-serif" size=3>Male</font>
+<input type="radio" id="female" name="Gender" value="Female">
+<font face="sans-serif" size=3>Female</font>
+<input type="radio" id="others" name="Gender" value="Others">
+<font face="sans-serif" size=3>Others</font><br><br>
+<font face="sans-serif" size=3>Address:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<textarea id="Address" name="Address" rows="5" cols="50"></textarea>
+<br><br>
+<font face="sans-serif" size=3>Courses:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="checkbox" id = "Python" name="course" value="Python">
+<font face="sans-serif" size=3>Python</font>
+<input type="checkbox" id = "C" name="course" value="C">
+<font face="sans-serif" size=3>C</font>
+<input type="checkbox" id = "C++" name="course" value="C++">
+<font face="sans-serif" size=3>C++</font>
+<input type="checkbox" id = "Java" name="course" value="Java">
+<font face="sans-serif" size=3>Java</font>
+<br><br>
+&nbsp&nbsp<input type="reset" name="reset" id="button" >
+&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" name="register" value="Register" id="button">
+</fieldset>
+</form>
+</body>
+</html>
